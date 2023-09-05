@@ -1,0 +1,21 @@
+{
+  "name": "ndn",
+  "description": "Data based binary format",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alksily/ndn",
+  "author": {
+    "name": "Aleksey Ilyin",
+    "email": "alksily@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alksily/ndn.git"
+  },
+  "license": "MIT",
+  "main": "./src",
+  "files": [
+    "src/",
+    "LICENSE.md",
+    "README.md"
+  ]
+}
