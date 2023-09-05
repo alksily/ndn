@@ -1,7 +1,7 @@
 {
-  "name": "ndn",
+  "name": "ndn-binary",
   "description": "Data based binary format",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/alksily/ndn",
   "author": {
     "name": "Aleksey Ilyin",
@@ -12,10 +12,26 @@
     "url": "git://github.com/alksily/ndn.git"
   },
   "license": "MIT",
-  "main": "./src",
   "files": [
+    "dist/",
     "src/",
     "LICENSE.md",
     "README.md"
-  ]
+  ],
+  "main": "dist/index.cjs",
+  "module": "src/index.js",
+  "type": "module",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15"
+  }
 }
