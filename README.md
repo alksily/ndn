@@ -58,7 +58,9 @@ Payload: ""
 
 **Code:**
 ```
-let obj1 = {
+import {encode, decode} from "ndn-binary";
+
+let data = {
     bool: true, 
     test: 12, 
     super: 3.1415,
@@ -69,7 +71,7 @@ let obj1 = {
     und: undefined
 };
 
-let en1 = encode(obj1);
+let result = encode(data);
 ```
 
 **Inside:**
