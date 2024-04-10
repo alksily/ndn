@@ -1,15 +1,22 @@
 {
   "name": "ndn-binary",
-  "description": "Data based binary format",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "description": "Encode and decode, and hold as binary your data",
+  "keywords": [
+    "ndn",
+    "encode",
+    "decode",
+    "binary"
+  ],
   "homepage": "https://github.com/alksily/ndn",
-  "author": {
-    "name": "Aleksey Ilyin",
-    "email": "alksily@outlook.com"
-  },
+  "author": "Aleksey Ilyin <alksily@outlook.com (https://github.com/alksily)",
+  "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/alksily/ndn.git"
+    "url": "https://github.com/alksily/ndn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alksily/ndn/issues"
   },
   "license": "MIT",
   "files": [
@@ -27,11 +34,14 @@
     ]
   },
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "babel src -d dist",
+    "test": "mocha"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.15",
-    "@babel/preset-env": "^7.22.15"
+    "@babel/preset-env": "^7.22.15",
+    "chai": "^5.0.0",
+    "mocha": "^10.0.0"
   }
 }

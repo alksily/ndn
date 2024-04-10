@@ -1,7 +1,16 @@
 ## Named Data object Notation specification
 
-NDN (Named Data object Notation) is a data based binary format designed to carry large amounts 
-of binary data with smaller amounts of additional data.
+NDN (_Named Data object Notation_) is a library designed for handling binary data 
+in a Node.js environment. It provides functions for encoding and decoding various
+data types into a binary format. This library allows users to efficiently work with
+binary data, facilitating tasks such as serialization and deserialization of complex
+data structures.
+
+### Features:
+- Encoding and decoding of boolean, integer, floating-point, string, array, object, null, and undefined data types.
+- Support for handling nested arrays and objects during encoding and decoding processes.
+- Utilizes base64 encoding for efficient representation of binary data.
+- Offers flexibility for working with different types of data, enabling seamless integration into various applications.
 
 ### Format
 ```
